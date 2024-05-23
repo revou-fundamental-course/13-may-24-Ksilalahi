@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Bangun Datar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To My Calculator Segitiga</h1>
+        <div class="formula">
+            <p>Rumus Luas Segitiga yaitu :</p>
+            <p>L = 1/2 x a x t</p>
+            <p>Rumus Keliling Segitiga yaitu :</p>
+            <p>K = a + b + c</p>
+        </div>
+        <form id="triangleForm">
+            <div>
+                <label for="calculationType">Pilih Perhitungan :</label>
+                <select id="calculationType">
+                    <option value="luas">Hitung Luas</option>
+                    <option value="keliling">Hitung Keliling</option>
+                </select>
+            </div>
+            <div id="inputAlasTinggi">
+                <div>
+                    <label for="nilaiAlas">Masukkan Alas :</label>
+                    <input type="number" id="nilaiAlas" required>
+                </div>
+                <div>
+                    <label for="nilaiTinggi">Masukkan Tinggi :</label>
+                    <input type="number" id="nilaiTinggi" required>
+                </div>
+            </div>
+            <div id="inputAlasSisiBC" style="display: none;">
+                <div>
+                    <label for="nilaiAlasKeliling">Masukkan Alas :</label>
+                    <input type="number" id="nilaiAlasKeliling" required>
+                </div>
+                <div>
+                    <label for="sisiB">Masukkan Sisi B :</label>
+                    <input type="number" id="sisiB" required>
+                </div>
+                <div>
+                    <label for="sisiC">Masukkan Sisi C :</label>
+                    <input type="number" id="sisiC" required>
+                </div>
+            </div>
+            <button type="button" id="hitungButton">Hitung</button>
+            <button type="reset">Reset</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="js/sciprt.js"></script>
+</body>
+</html>
